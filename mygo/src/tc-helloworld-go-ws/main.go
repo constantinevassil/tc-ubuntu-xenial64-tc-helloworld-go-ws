@@ -16,7 +16,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 
 	t1 = time.Now()
 	t01 := t1.Sub(t0)
-	tStr1 := fmt.Sprintf("Hello World from Go in minimal Docker container (4.28MB) - tc-helloworld-go-ws - v.1.0, it took %v to run", t01)
+	tStr1 := fmt.Sprintf("Hello World from Go (4.28MB) - tc-helloworld-go-ws - v.1.0, it took %v to run", t01)
 
 	fmt.Fprintln(w, tStr1)
 
