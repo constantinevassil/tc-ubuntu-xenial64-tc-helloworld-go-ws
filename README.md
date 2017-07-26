@@ -111,6 +111,14 @@ enp0s8: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 ...
 ```
 
-Open the browser and enter this address: 10.0.1.23:8080
+Open the browser on the host and enter this address: 10.0.1.23:8080
+
 You should see:
+
+Hello World from Go (4.28MB) - tc-helloworld-go-ws - v.1.0, it took 140ns to run
+
+Open the browser remote machine in your network and enter this address: 10.0.1.23:8080
+
+You should see:
+
 Hello World from Go (4.28MB) - tc-helloworld-go-ws - v.1.0, it took 140ns to run
