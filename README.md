@@ -1,6 +1,6 @@
 # tc-ubuntu-xenial64-tc-helloworld-go-ws
 
-## Building Minimal Web Server with Go Applications
+## Building Minimal Web Server with Go
 
 ## tc-helloworld-go-ws
 
