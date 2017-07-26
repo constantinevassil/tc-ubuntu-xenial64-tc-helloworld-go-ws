@@ -4,9 +4,21 @@ Vagrant config to minimal web werver with Go from your Mac.
 
 ## Getting started
 
-On Mac
+Topics:
+
+1. Mac computer
+1. Virtualbox 
+1. Vagrant
+1. Ubuntu 16.04+
+1. Go
+1. helloworld web app.
+1. Testing with browser on local host.
+1. Testing with browser on remote machine in same network.
+
 
 ## tc-helloworld-go-ws
+
+On Mac
 
 ```bash
 git clone https://github.com/topconnector/tc-ubuntu-xenial64-tc-helloworld-go-ws.git 
