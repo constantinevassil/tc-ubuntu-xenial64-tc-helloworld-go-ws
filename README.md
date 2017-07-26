@@ -64,23 +64,22 @@ For example:
 We first need to ensure that we can access the vagrant locally before we test across other sites on the network. We also need to determine the IP address that was assigned to the vagrant instance. From the tc-ubuntu-xenial64-tc-helloworld-go-ws directory, execute the following command in the terminal:
 
 ```bash
-    vagrant ssh
+    vagrant ssh tc-vb-u-x-tc-helloworld-master
     
 ```
 
-Install latest Golang:
+Refresh Ubuntu:
 
 ```bash
-cd ..
-ubuntu@tc-rocksdb:/vagrant$ sudo apt-get update && sudo apt-get dist-upgrade
+vagrant@tc-vb-u-x-tc-helloworld-master:~$ sudo apt-get update && sudo apt-get dist-upgrade
 ```
 
 Check Golang version:
 
 ```bash
-ubuntu@tc-rocksdb:/vagrant$ go version
-ubuntu@tc-rocksdb:/vagrant$ 
-go version go1.8.3 linux/amd64
+vagrant@tc-vb-u-x-tc-helloworld-master:~$ sudo apt-get install golang-go
+vagrant@tc-vb-u-x-tc-helloworld-master:~$ go version
+go version go1.7.4 linux/amd64
 ```
 
 ### Set the GOPATH environment variable
@@ -89,7 +88,7 @@ The GOPATH environment variable specifies the location of your workspace.
 
 ```bash
 export GOPATH=/vagrant/mygo
-cd /vagrant/mygo/tc-helloworld-go-ws
+cd /vagrant/mygo/src/tc-helloworld-go-ws
 CGO_ENABLED=0 go build -a -tags netgo -ldflags '-w' .
 ./tc-helloworld-go-ws
 ```
