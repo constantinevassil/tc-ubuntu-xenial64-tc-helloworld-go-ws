@@ -87,8 +87,30 @@ go version go1.7.4 linux/amd64
 The GOPATH environment variable specifies the location of your workspace. 
 
 ```bash
-export GOPATH=/vagrant/mygo
-cd /vagrant/mygo/src/tc-helloworld-go-ws
-CGO_ENABLED=0 go build -a -tags netgo -ldflags '-w' .
-./tc-helloworld-go-ws
+vagrant@tc-vb-u-x-tc-helloworld-master:~$export GOPATH=/vagrant/mygo
+vagrant@tc-vb-u-x-tc-helloworld-master:~$cd /vagrant/mygo/src/tc-helloworld-go-ws
+vagrant@tc-vb-u-x-tc-helloworld-master:/vagrant/mygo/src/tc-helloworld-go-ws$ CGO_ENABLED=0 go build -a -tags netgo -ldflags '-w' .
+vagrant@tc-vb-u-x-tc-helloworld-master:/vagrant/mygo/src/tc-helloworld-go-ws$ ./tc-helloworld-go-ws
+Started, serving at 8080
+
 ```
+
+Find the Vagrants' public_network IP address:
+
+```bash
+ifconfig
+...
+enp0s8: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.1.23  netmask 255.255.255.0  broadcast 10.0.1.255
+        inet6 fe80::a00:27ff:feb8:4314  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:b8:43:14  txqueuelen 1000  (Ethernet)
+        RX packets 439  bytes 37772 (37.7 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 47  bytes 4895 (4.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+...
+```
+
+Open the browser and enter this address: 10.0.1.23:8080
+You should see:
+Hello World from Go (4.28MB) - tc-helloworld-go-ws - v.1.0, it took 140ns to run
