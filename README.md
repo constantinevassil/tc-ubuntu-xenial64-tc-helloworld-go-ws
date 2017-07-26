@@ -73,7 +73,6 @@ Install latest Golang:
 ```bash
 cd ..
 ubuntu@tc-rocksdb:/vagrant$ sudo apt-get update && sudo apt-get dist-upgrade
-ubuntu@tc-rocksdb:/vagrant$ sudo apt-get install golang-go
 ```
 
 Check Golang version:
