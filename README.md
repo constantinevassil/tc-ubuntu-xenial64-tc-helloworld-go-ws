@@ -2,6 +2,10 @@
 
 Vagrant config to minimal web werver with Go from your Mac.
 
+Objective:
+
+How to View a Locally Developed Website on Other Devices
+
 ## Getting started
 
 Topics:
