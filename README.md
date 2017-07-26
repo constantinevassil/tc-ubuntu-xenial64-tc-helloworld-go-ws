@@ -67,3 +67,28 @@ We first need to ensure that we can access the vagrant locally before we test ac
     vagrant ssh
     
 ```
+
+Install latest Golang:
+
+```bash
+cd ..
+ubuntu@tc-rocksdb:/vagrant$ sudo add-apt-repository ppa:longsleep/golang-backports
+ubuntu@tc-rocksdb:/vagrant$ sudo apt-get update
+ubuntu@tc-rocksdb:/vagrant$ sudo apt-get install golang-go
+```
+
+Check Golang version:
+
+```bash
+ubuntu@tc-rocksdb:/vagrant$ go version
+ubuntu@tc-rocksdb:/vagrant$ 
+go version go1.8.3 linux/amd64
+```
+
+### Set the GOPATH environment variable
+
+The GOPATH environment variable specifies the location of your workspace. 
+
+```bash
+export GOPATH=/vagrant/mygo
+```
