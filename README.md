@@ -39,7 +39,7 @@ You must have the following installed:
   Install by running: 
     
 ```bash
-    vagrant box update
+    vagrant box update --provider virtualbox
 ```
    
 * run Virtual machine (VM)
@@ -49,5 +49,5 @@ You must have the following installed:
   Virtualbox:
   
 ```bash
-    vagrant up
+    vagrant up --provider virtualbox
 ```
