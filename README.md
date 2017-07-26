@@ -91,4 +91,7 @@ The GOPATH environment variable specifies the location of your workspace.
 
 ```bash
 export GOPATH=/vagrant/mygo
+cd /vagrant/mygo/tc-helloworld-go-ws
+CGO_ENABLED=0 go build -a -tags netgo -ldflags '-w' .
+./tc-helloworld-go-ws
 ```
